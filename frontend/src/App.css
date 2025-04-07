@@ -1,0 +1,197 @@
+/* App.css */
+
+/* Base styles and light mode */
+body {
+  background-color: #f4f4f4; /* Lighter default background */
+  color: #333; /* Darker default text */
+  font-family: 'Poppins', sans-serif;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  margin: 30px;
+  padding: 20px;
+}
+
+.todo-container {
+  background-color: #35f5ef; /* White container background */
+  padding: 40px;
+  border-radius: 15px; /* Slightly less rounded */
+  width: 95%; /* Adjust width */
+  max-width: 1200px; /* More common max-width */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Softer shadow */
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2.5rem; /* Use rem for better scalability */
+  margin-bottom: 2rem;
+  color: inherit;
+  text-align: center;
+  width: 100%;
+}
+
+/* Input */
+input[type="text"] {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #fff;
+  color: #333;
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+/* Buttons */
+button {
+  padding: 0.75rem 1.25rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  transform: scale(1.02); /* More subtle hover effect */
+}
+
+/* Primary button style */
+.add-task,
+.dark-mode-toggle,
+li button {
+  background-color: #5b625b; /* Green primary color */
+  color: white;
+}
+
+.add-task:hover,
+.dark-mode-toggle:hover,
+li button:hover {
+  background-color: #3c3f3c;
+}
+
+/* Task List */
+ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2rem;
+  width: 90%; /* Adjust list width */
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem 0;
+  border-bottom: 1px solid #eee;
+  color: #333;
+}
+
+.task-item:last-child {
+  border-bottom: none; /* Remove border from the last item */
+}
+
+.task-item > div { /* Group checkbox and text */
+  display: flex;
+  align-items: center;
+}
+
+.task-item input[type="checkbox"] {
+  margin-right: 0.75rem;
+  cursor: pointer;
+}
+
+.task-item span {
+  font-size: 1rem;
+  margin-right: 1rem;
+  cursor: pointer;
+  flex-grow: 1; /* Allow text to take up available space */
+}
+
+.task-item.completed span {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+/* Filter Select */
+select {
+  padding: 0.75rem;
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  width: 150px;
+  margin-top: 1rem;
+}
+
+select option {
+  background-color: #fff;
+  color: #333;
+}
+
+/* Edit and Delete Buttons in List Items */
+li button {
+  padding: 0.5rem 0.75rem;
+  font-size: 0.8rem;
+  margin-left: 0.5rem;
+  background-color: #5b625b; /* Red for destructive actions */
+}
+
+li button:first-of-type { /* Style the 'Edit' button */
+  background-color: #5b625b; /* Blue for edit */
+}
+
+li button:first-of-type:hover {
+  background-color: #0056b3;
+}
+
+li button:hover {
+  background-color: #c82333;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #1a1a1a;
+  color: #eee;
+}
+
+body.dark-mode .todo-container {
+  background-color: #3c3c3c;
+  color: #eee;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-mode input[type="text"] {
+  background-color: #333;
+  color: #eee;
+  border-color: #555;
+}
+
+body.dark-mode select {
+  background-color: #333;
+  color: #eee;
+  border-color: #555;
+}
+
+body.dark-mode select option {
+  background-color: #444;
+  color: #eee;
+}
+
+body.dark-mode .task-item {
+  color: #eee;
+  border-bottom-color: #444;
+}
+
+body.dark-mode .task-item.completed span {
+  opacity: 0.6;
+  color: #bbb; /* Slightly lighter strikethrough text */
+}

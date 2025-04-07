@@ -1,0 +1,7 @@
+node_modules/
+build/
+.DS_Store
+.env
+package-lock.json # If you are using npm
+yarn.lock        # If you are using Yarn
+pnpm-lock.yaml   # If you are using pnpm
