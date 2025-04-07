@@ -88,5 +88,5 @@ To run the backend and frontend on your local machine, follow these steps:
 
 ## Live Deployment Links (Once Deployed)
 
-* **Backend (Render):** `YOUR_RENDER_BACKEND_LIVE_URL`
-* **Frontend (GitHub Pages/Netlify/Vercel):** `YOUR_FRONTEND_LIVE_URL`
+* **Backend (Render):** `https://todo-backend-api-khwh.onrender.com`
+* **Frontend (GitHub Pages/Netlify/Vercel):** `todo-fronted-git-master-arielll74s-projects.vercel.app`
