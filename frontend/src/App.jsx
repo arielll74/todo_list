@@ -3,7 +3,7 @@ import './App.css';
 import axios from 'axios'; // Import the axios library
 
 // Replace with your Render backend URL once deployed!
-const API_URL = 'http://localhost:8000/api/todos/';
+const API_URL = 'https://todo-backend-api-khwh.onrender.com/api/';
 
 function App() {
     const [tasks, setTasks] = useState([]);
