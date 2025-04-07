@@ -43,9 +43,8 @@ INSTALLED_APPS = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    "todo-fronted-git-master-arielll74s-projects.vercel.app",
-    "todo-fronted-akl9209r6-arielll74s-projects.vercel.app",
-   
+    "https://todo-fronted-git-master-arielll74s-projects.vercel.app",
+    "https://todo-fronted-akl9209r6-arielll74s-projects.vercel.app",
 ]
 
 MIDDLEWARE = [
