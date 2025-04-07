@@ -31,7 +31,7 @@ To run the backend and frontend on your local machine, follow these steps:
     ```bash
     python manage.py runserver
     ```
-    The backend API will be accessible at `http://localhost:8000`.
+    The backend API will be accessible at `hhttps://todo-backend-api-khwh.onrender.com`.
 
 ### React Front-End Application
 
@@ -47,12 +47,12 @@ To run the backend and frontend on your local machine, follow these steps:
     ```bash
     npm start  # Or yarn start
     ```
-    The frontend application will usually be accessible at `http://localhost:3000`. Make sure the `API_URL` in `frontend/src/App.jsx` is set to your local backend URL (`http://localhost:8000/api/todos/`) during development.
+    The frontend application will be accessible at `todo-fronted-git-master-arielll74s-projects.vercel.app`. 
 
 ## Django REST API Endpoints
 
-**Base URL (Development):** `http://localhost:8000/api/todos/`
-**Base URL (Deployed - Replace with your Render URL):** `YOUR_RENDER_BACKEND_URL/api/todos/`
+
+**Base URL (Deployed - Replace with your Render URL):** `https://todo-backend-api-khwh.onrender.com`
 
 | Endpoint          | HTTP Method | Description                                      | Request Body (Example)         | Response Body (Example)                                                                                                                               |
 | ----------------- | ----------- | ------------------------------------------------ | ------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
