@@ -52,7 +52,7 @@ To run the backend and frontend on your local machine, follow these steps:
 ## Django REST API Endpoints
 
 
-**Base URL (Deployed - Replace with your Render URL):** `https://todo-backend-api-khwh.onrender.com`
+**Base URL :** `https://todo-backend-api-khwh.onrender.com`
 
 | Endpoint          | HTTP Method | Description                                      | Request Body (Example)         | Response Body (Example)                                                                                                                               |
 | ----------------- | ----------- | ------------------------------------------------ | ------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
